@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/txtLogoAuth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LÉTIMAX"
+        android:textColor="@color/gold_primary"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:letterSpacing="0.18"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp" />
+
+    <!-- Moldura Dourada Animada da Câmara Frontal -->
+    <FrameLayout
+        android:id="@+id/frameCameraAuth"
+        android:layout_width="250dp"
+        android:layout_height="310dp"
+        android:background="@drawable/borda_dourada"
+        android:padding="4dp"
+        app:layout_constraintTop_toBottomOf="@id/txtLogoAuth"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="28dp">
+
+        <androidx.camera.view.PreviewView
+            android:id="@+id/previewViewAuth"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/txtStatusAutenticacao"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="FASE 1: A verificar identidade facial..."
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/frameCameraAuth"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp" />
+
+    <TextView
+        android:id="@+id/txtSubstatusAuth"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Olhe para a câmara frontal"
+        android:textSize="14sp"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/txtStatusAutenticacao"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <Button
+        android:id="@+id/btnPinEmergencia"
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:text="PIN de Emergência"
+        android:backgroundTint="@color/light_interactive"
+        android:textColor="@color/gold_primary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
