@@ -1,0 +1,12 @@
+<resources>
+    <style name="Theme.LetimaX" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:windowBackground">@color/light_background</item>
+        <item name="colorPrimary">@color/gold_primary</item>
+        <item name="colorOnPrimary">@color/light_background</item>
+        <item name="colorSurface">@color/light_surface</item>
+        <item name="android:textColorPrimary">@color/light_text_primary</item>
+        <item name="android:textColorSecondary">@color/light_text_secondary</item>
+        <item name="android:statusBarColor">@color/light_background</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+</resources>
