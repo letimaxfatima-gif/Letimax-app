@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_background"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/txtTituloCadastro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LÉTIMAX"
+        android:textColor="@color/gold_primary"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:letterSpacing="0.15"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/txtFaseCadastro"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Fase 1 de 3 — Cadastro de Voz"
+        android:textColor="@color/light_text_primary"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/txtTituloCadastro"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp" />
+
+    <!-- Container Câmara Frontal com Moldura Dourada -->
+    <FrameLayout
+        android:id="@+id/containerCamera"
+        android:layout_width="260dp"
+        android:layout_height="320dp"
+        android:background="@drawable/borda_dourada"
+        android:padding="4dp"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/txtFaseCadastro"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp">
+
+        <androidx.camera.view.PreviewView
+            android:id="@+id/previewViewCadastro"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+
+    <!-- Texto da Frase de Voz / Instrução de Ângulo -->
+    <TextView
+        android:id="@+id/txtInstrucaoBiometria"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Diga em voz alta:\n\"Eu sou o Senhor Letício, criador e único dono da LétimaX.\""
+        android:textColor="@color/light_text_primary"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:padding="16dp"
+        app:layout_constraintTop_toBottomOf="@id/containerCamera"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp" />
+
+    <ProgressBar
+        android:id="@+id/progressBarBiometria"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="0dp"
+        android:layout_height="12dp"
+        android:max="100"
+        android:progress="0"
+        android:progressTint="@color/gold_primary"
+        app:layout_constraintTop_toBottomOf="@id/txtInstrucaoBiometria"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/btnAcaoCadastro"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:text="Gravar Frase 1"
+        android:backgroundTint="@color/gold_primary"
+        android:textColor="@color/light_background"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/btnRepetirCadastro"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="12dp" />
+
+    <Button
+        android:id="@+id/btnRepetirCadastro"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:text="Repetir"
+        android:backgroundTint="@color/light_interactive"
+        android:textColor="@color/light_background"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
