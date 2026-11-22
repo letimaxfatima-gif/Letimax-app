@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Identidade Dourada Inviolável -->
+    <color name="gold_primary">#C9A84C</color>
+    <color name="gold_dark">#A38432</color>
+    <color name="gold_soft_bubble">#26C9A84C</color>
+
+    <!-- Tema Claro (Padrão estilo ChatGPT) -->
+    <color name="light_background">#FFFFFF</color>
+    <color name="light_surface">#F7F7F8</color>
+    <color name="light_text_primary">#1A1A1A</color>
+    <color name="light_text_secondary">#5E5E5E</color>
+    <color name="light_interactive">#2D2D2D</color>
+
+    <!-- Tema Escuro (Preto Profundo) -->
+    <color name="dark_background">#0D0D0D</color>
+    <color name="dark_surface">#1A1A1A</color>
+    <color name="dark_text_primary">#FFFFFF</color>
+    <color name="dark_text_secondary">#B0B0B0</color>
+
+    <!-- Indicadores de Estado -->
+    <color name="status_green">#2E7D32</color>
+    <color name="status_red">#C62828</color>
+    <color name="status_orange">#EF6C00</color>
+</resources>
