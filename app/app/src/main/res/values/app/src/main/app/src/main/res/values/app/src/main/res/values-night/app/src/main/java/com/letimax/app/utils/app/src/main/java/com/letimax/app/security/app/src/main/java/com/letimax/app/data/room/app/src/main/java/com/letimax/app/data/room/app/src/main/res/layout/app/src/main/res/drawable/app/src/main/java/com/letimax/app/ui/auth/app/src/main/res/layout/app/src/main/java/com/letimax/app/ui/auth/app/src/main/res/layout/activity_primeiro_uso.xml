@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/light_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LÉTIMAX"
+            android:textColor="@color/gold_primary"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Configuração Inicial — Chave de IA"
+            android:textColor="@color/light_text_primary"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Antes de começar, adicione a chave da Anthropic (Claude) para que a LétimaX possa raciocinar, criar textos e gerir o negócio."
+            android:textColor="@color/light_text_secondary"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:layout_marginTop="12dp" />
+
+        <EditText
+            android:id="@+id/editClaudeKey"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:hint="Cole aqui a ANTHROPIC_API_KEY"
+            android:inputType="textPassword"
+            android:background="@drawable/borda_dourada"
+            android:padding="12dp"
+            android:layout_marginTop="32dp" />
+
+        <Button
+            android:id="@+id/btnGuardarChave"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="Guardar Chave e Iniciar LétimaX"
+            android:backgroundTint="@color/gold_primary"
+            android:textColor="@color/light_background"
+            android:textStyle="bold"
+            android:layout_marginTop="24dp" />
+
+        <TextView
+            android:id="@+id/linkAnthropic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Obter chave em anthropic.com"
+            android:textColor="@color/gold_primary"
+            android:textSize="14sp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp" />
+
+    </LinearLayout>
+</ScrollView>
